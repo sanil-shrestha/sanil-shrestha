@@ -1,0 +1,14 @@
+:root { color-scheme: dark; font-family: Inter, ui-sans-serif, system-ui, sans-serif; background: #07111f; color: #f6f8ff; }
+* { box-sizing: border-box; }
+body { min-height: 100vh; margin: 0; display: grid; place-items: center; padding: 28px; background: radial-gradient(circle at top, #19375c 0, #07111f 52%); }
+.card { width: min(680px, 100%); padding: clamp(28px, 6vw, 56px); border: 1px solid #2c4869; border-radius: 28px; background: rgba(8, 20, 37, .92); box-shadow: 0 28px 80px rgba(0,0,0,.35); }
+.icon { width: 96px; height: 96px; border-radius: 22px; }
+.eyebrow { margin: 24px 0 8px; color: #52e5ff; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; font-size: .78rem; }
+h1 { margin: 0 0 18px; font-size: clamp(2rem, 7vw, 4rem); line-height: 1; }
+p { color: #c6d4e6; font-size: 1.08rem; line-height: 1.65; }
+nav { display: flex; flex-wrap: wrap; gap: 12px; margin: 28px 0; }
+a { color: #52e5ff; }
+nav a { padding: 12px 16px; border: 1px solid #35628a; border-radius: 999px; text-decoration: none; font-weight: 700; }
+.contact { font-size: .92rem; }
+article h1 { font-size: clamp(2rem, 6vw, 3.4rem); }
+article h2 { margin-top: 30px; }
