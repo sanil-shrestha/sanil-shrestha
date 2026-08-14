@@ -1,0 +1,9 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Ranked Random Daily Publisher</title><link rel="stylesheet" href="../../style.css"></head>
+<body><main class="card"><p class="eyebrow">Ranked Random Daily Publisher</p><h1>Finishing TikTok connection</h1><p id="status">Securely returning to the creator dashboard…</p></main><script>
+const params = new URLSearchParams(window.location.search);
+const code = params.get('code'); const state = params.get('state');
+const destination = new URL('https://homeserver.tail0076f5.ts.net:8444/oauth/callback');
+if (code && state) { destination.searchParams.set('code', code); destination.searchParams.set('state', state); window.location.replace(destination); }
+else { document.getElementById('status').textContent = 'The TikTok connection did not include the required authorization details. Return to the publisher dashboard and try again.'; }
+</script></body></html>
